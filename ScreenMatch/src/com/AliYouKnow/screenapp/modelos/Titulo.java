@@ -52,9 +52,9 @@ public class Titulo {
     //public, protected, private y default(Solo se accese las mismas clases que estan en el paquete).
 
     public void muestraFichaTecnica(){
-        System.out.println("El nombre de la pelicula es: " + nombre);
+        System.out.println("El nombre es: " + nombre);
         System.out.println("Fecha de lanzamiento: " + fechaDeLanzamiento);
-        System.out.println("Duracion en minutos: " + duracionEnMinutos);
+        System.out.println("Duracion en minutos: " + getDuracionEnMinutos());
         System.out.println("*************");
     }
 

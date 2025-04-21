@@ -1,4 +1,5 @@
 import com.AliYouKnow.screenapp.modelos.Pelicula;
+import com.AliYouKnow.screenapp.modelos.Serie;
 
 public class Principal {
     public static void main(String[] args) {
@@ -19,6 +20,20 @@ public class Principal {
         System.out.println(pelicula1.getTotalEvaluaciones());
 
         System.out.println(pelicula1.calculaMedia());
+
+        Serie mrRobot = new Serie();
+        mrRobot.setNombre("Mr Robot");
+        mrRobot.setFechaDeLanzamiento(2001);
+        mrRobot.setTemporadas(5);
+        mrRobot.setMinutosPorEpisodio(53);
+        mrRobot.setEpisodiosPorTemporada(10);
+        mrRobot.muestraFichaTecnica();
+
+        //muestre la duracion en minutos de la serie
+
+        System.out.println("la duracion de minutos es de: "+ mrRobot.getDuracionEnMinutos());
+
+
 
 
 
