@@ -1,75 +1,15 @@
 package com.AliYouKnow.screenapp.modelos;
 
-public class Pelicula {
+public class Pelicula extends Titulo{
+    private String director;
 
 
-    private String nombrePelicula;
-    private int fechaDeLanzamiento;
-    private int duracionEnMinutos;
-    private boolean incluidoEnElPlan;
-    private double sumaDeCalificaciones; //modificadores de acceso - Encapsulamiento
-    private int totalEvaluaciones;
-    //creando metodos
-    /*
-    convencion de metodos: verbos en infinitivo y tambien en imperativo(mas usado)=
-    */
 
-    public String getNombrePelicula() {
-        return nombrePelicula;
+    public String getDirector() {
+        return director;
     }
 
-    public int getFechaDeLanzamiento() {
-        return fechaDeLanzamiento;
+    public void setDirector(String director) {
+        this.director = director;
     }
-
-    public int getDuracionEnMinutos() {
-        return duracionEnMinutos;
-    }
-
-    public boolean isIncluidoEnElPlan() {
-        return incluidoEnElPlan;
-    }
-
-    public void setNombrePelicula(String nombrePelicula) {
-        this.nombrePelicula = nombrePelicula;
-    }
-
-    public void setFechaDeLanzamiento(int fechaDeLanzamiento) {
-        this.fechaDeLanzamiento = fechaDeLanzamiento;
-    }
-
-    public void setDuracionEnMinutos(int duracionEnMinutos) {
-        this.duracionEnMinutos = duracionEnMinutos;
-    }
-
-    public void setIncluidoEnElPlan(boolean incluidoEnElPlan) {
-        this.incluidoEnElPlan = incluidoEnElPlan;
-    }
-
-    public int getTotalEvaluaciones(){     //Convencion al crear un metodo que queremos obtener algo, se le llama => get
-        return totalEvaluaciones;
-    } // metodo que permite mostrar el valor totalEvaluaciones,
-    //public, protected, private y default(Solo se accese las mismas clases que estan en el paquete).
-
-    public void muestraFichaTecnica(){
-        System.out.println("El nombre de la pelicula es: " + nombrePelicula);
-        System.out.println("Fecha de lanzamiento: " + fechaDeLanzamiento);
-        System.out.println("Duracion en minutos: " + duracionEnMinutos);
-        System.out.println("*************");
-    }
-
-    public void evalua(double calificacionPeli){
-        sumaDeCalificaciones += calificacionPeli;
-        totalEvaluaciones++;
-    }
-
-    public double calculaMedia(){
-        return sumaDeCalificaciones / totalEvaluaciones;
-
-
-        }
-
-
-
-
 }

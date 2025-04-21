@@ -3,7 +3,7 @@ import com.AliYouKnow.screenapp.modelos.Pelicula;
 public class Principal {
     public static void main(String[] args) {
         Pelicula pelicula1 = new Pelicula();
-        pelicula1.setNombrePelicula("Matrix");
+        pelicula1.setNombre("Matrix");
         pelicula1.setFechaDeLanzamiento(2000);
         pelicula1.setDuracionEnMinutos(120);
 
@@ -14,7 +14,7 @@ public class Principal {
         pelicula1.evalua(9.5);
         pelicula1.evalua(8);
         pelicula1.evalua(6);
-        System.out.println(pelicula1.getNombrePelicula());
+        System.out.println(pelicula1.getNombre());
         System.out.println(pelicula1.getFechaDeLanzamiento());
         System.out.println(pelicula1.getTotalEvaluaciones());
 
