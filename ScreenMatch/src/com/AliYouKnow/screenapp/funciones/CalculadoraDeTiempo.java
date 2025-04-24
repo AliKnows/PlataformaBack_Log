@@ -1,18 +1,39 @@
 package com.AliYouKnow.screenapp.funciones;
-import com.AliYouKnow.screenapp.modelos.Pelicula;
+//import com.AliYouKnow.screenapp.modelos.Pelicula;
+//import com.AliYouKnow.screenapp.modelos.Serie;
+import com.AliYouKnow.screenapp.modelos.Titulo;
 
 public class CalculadoraDeTiempo {
 
     private int tiempoTotal;
 
 
-    //metodos
-    public void incluyeTitulos(Pelicula peli){
-        tiempoTotal += peli.getDuracionEnMinutos();
-
-
+    public int getTiempoTotal() {
+        return tiempoTotal;
     }
-//evitando codigo #2
+
+    //metodos codigo duplicado
+
+//    public void incluyeTitulos(Pelicula peli){
+//        tiempoTotal += peli.getDuracionEnMinutos();
+//
+//
+//    }
+//    public void incluyeTitulos(Serie serie){
+//
+//        tiempoTotal += serie.getDuracionEnMinutos();
+//
+//
+//}
+
+
+//Polimorfismo:
+
+    public void incluyeTitulos(Titulo tittle){
+        this.tiempoTotal += tittle.getDuracionEnMinutos(); // para hacer referencia a la varible de la case this.
+    }
+
+
 
 
 }

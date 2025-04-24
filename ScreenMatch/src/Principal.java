@@ -1,3 +1,4 @@
+import com.AliYouKnow.screenapp.funciones.CalculadoraDeTiempo;
 import com.AliYouKnow.screenapp.modelos.Pelicula;
 import com.AliYouKnow.screenapp.modelos.Serie;
 
@@ -28,31 +29,25 @@ public class Principal {
         mrRobot.setMinutosPorEpisodio(53);
         mrRobot.setEpisodiosPorTemporada(10);
         mrRobot.muestraFichaTecnica();
-
         //muestre la duracion en minutos de la serie
 
         System.out.println("la duracion de minutos es de: "+ mrRobot.getDuracionEnMinutos());
 
 
+        Pelicula pelicula2 = new Pelicula();
+        pelicula2.setNombre("Devs");
+        pelicula2.setFechaDeLanzamiento(2005);
+        pelicula2.setDuracionEnMinutos(150);
 
 
+        CalculadoraDeTiempo calcularTiempo =  new CalculadoraDeTiempo();
+        calcularTiempo.incluyeTitulos(pelicula1);
+        calcularTiempo.incluyeTitulos(mrRobot);
+        calcularTiempo.incluyeTitulos(pelicula2);
+
+        System.out.println("Tiempo para ver los titulo: "+calcularTiempo.getTiempoTotal() + " Minutos");
 
 
-
-
-
-
-
-
-
-       /* com.AliYouKnow.screenapp.modelos.Pelicula pelicula2 = new com.AliYouKnow.screenapp.modelos.Pelicula();
-        pelicula2.nombrePelicula = "Mr Robot";
-        pelicula2.fechaDeLanzamiento = 2005;
-        pelicula2.duracionEnMinutos = 120;
-        pelicula2.muestraFichaTecnica();
-        pelicula2.evalua(9.8);
-         System.out.println(pelicula2 +" ; "+ pelicula1);
-        */
 
 
 
