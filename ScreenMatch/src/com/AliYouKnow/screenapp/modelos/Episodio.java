@@ -29,7 +29,7 @@ public class Episodio implements Clasificable {
         return Serie;
     }
 
-    public void setSerie(String serie) {
+    public void setSerie(Serie serie) {
         Serie = serie;
     }
 

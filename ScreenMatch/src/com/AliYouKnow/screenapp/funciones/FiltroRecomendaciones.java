@@ -2,7 +2,8 @@ package com.AliYouKnow.screenapp.funciones;
 
 public class FiltroRecomendaciones {
 
-    void filtra(Clasificable clasificacion){
+    //metodo para recomendar
+    public void filtra(Clasificable clasificacion){
         if(clasificacion.getClasificacion() >= 4){
             System.out.println("Alta evaluacion en el momento");
         } else if (clasificacion.getClasificacion() >=2) {

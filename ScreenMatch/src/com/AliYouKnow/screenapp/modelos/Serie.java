@@ -1,6 +1,8 @@
 package com.AliYouKnow.screenapp.modelos;
 
-public class Serie extends Titulo{
+import com.AliYouKnow.screenapp.funciones.Clasificable;
+
+public class Serie extends Titulo  {
     private int temporadas;
     private int episodiosPorTemporada;
     private int minutosPorEpisodio;

@@ -1,4 +1,6 @@
 import com.AliYouKnow.screenapp.funciones.CalculadoraDeTiempo;
+import com.AliYouKnow.screenapp.funciones.FiltroRecomendaciones;
+import com.AliYouKnow.screenapp.modelos.Episodio;
 import com.AliYouKnow.screenapp.modelos.Pelicula;
 import com.AliYouKnow.screenapp.modelos.Serie;
 
@@ -46,6 +48,15 @@ public class Principal {
         calcularTiempo.incluyeTitulos(pelicula2);
 
         System.out.println("Tiempo para ver los titulo: "+calcularTiempo.getTiempoTotal() + " Minutos");
+
+
+        FiltroRecomendaciones filtroRecomendaciones = new FiltroRecomendaciones();
+        filtroRecomendaciones.filtra(pelicula1);
+
+        Episodio episodio = new Episodio();
+        episodio.setNumeroEpisodio(1);
+        episodio.setNombre("Osymandias");
+        episodio.setSerie(mrRobot);
 
 
 
