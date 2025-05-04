@@ -57,7 +57,9 @@ public class Principal {
         episodio.setNumeroEpisodio(1);
         episodio.setNombre("Osymandias");
         episodio.setSerie(mrRobot);
+        episodio.setTotalVisualiziones(50);
 
+        filtroRecomendaciones.filtra(episodio);
 
 
 

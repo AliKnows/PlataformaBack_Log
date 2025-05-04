@@ -5,9 +5,17 @@ import com.AliYouKnow.screenapp.funciones.Clasificable;
 public class Episodio implements Clasificable {
     private int numeroEpisodio;
     private String nombre;
-    private String Serie;
+    private Serie Serie;
     private int totalVisualiziones;
 
+
+    public int getTotalVisualiziones() {
+        return totalVisualiziones;
+    }
+
+    public void setTotalVisualiziones(int totalVisualiziones) {
+        this.totalVisualiziones = totalVisualiziones;
+    }
 
     public String getNombre() {
         return nombre;
@@ -25,7 +33,7 @@ public class Episodio implements Clasificable {
         this.numeroEpisodio = numeroEpisodio;
     }
 
-    public String getSerie() {
+    public Serie getSerie() {
         return Serie;
     }
 
